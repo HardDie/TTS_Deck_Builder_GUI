@@ -13,5 +13,8 @@
   height: 80vh;
 
   margin: 10vh 5%;
+
+  display: flex;
+  flex-direction: column;
 }
 </style>

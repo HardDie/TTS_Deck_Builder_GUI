@@ -1,5 +1,5 @@
 <script setup>
-import WidgetCard from "./WidgetCard.vue";
+import WidgetCard from "./common/WidgetCard.vue";
 </script>
 
 <template>
@@ -69,6 +69,16 @@ import WidgetCard from "./WidgetCard.vue";
     title="Bub-Bo"
     img="https://foursouls.com/wp-content/uploads/2022/01/fsp2-bum_bo-308x420.png"
   ></WidgetCard>
+
+  <WidgetCard
+    title="Selfie Carpet"
+    img="https://hwint.ru/wp-content/uploads/2021/09/Selfie-Carpet_card.png"
+  ></WidgetCard>
+  <WidgetCard
+    title="All Hallows' Eve"
+    img="https://foursouls.com/wp-content/uploads/2022/01/r-all_hallows_eve-420x308.png"
+  ></WidgetCard>
+
   <WidgetCard
     title="Dark Judas"
     img="https://foursouls.com/wp-content/uploads/2022/01/fsp2-dark_judas-308x420.png"
@@ -97,9 +107,5 @@ import WidgetCard from "./WidgetCard.vue";
   <WidgetCard
     title="The Dauntless"
     img="https://foursouls.com/wp-content/uploads/2022/01/r-the_dauntless-308x420.png"
-  ></WidgetCard>
-  <WidgetCard
-    title="The Hoarder"
-    img="https://foursouls.com/wp-content/uploads/2022/01/r-the_hoarder-308x420.png"
   ></WidgetCard>
 </template>

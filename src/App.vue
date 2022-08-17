@@ -1,20 +1,18 @@
 <script setup>
-import WidgetMain from "./components/WidgetMain.vue";
-import WidgetBar from "./components/WidgetBar.vue";
-import WidgetBody from "./components/WidgetBody.vue";
-import WidgetCreate from "./components/WidgetCreate.vue";
+import WidgetMainWraper from "./components/main_menu/WidgetMainWraper.vue";
+import WidgetBar from "./components/common/WidgetBar.vue";
+import WidgetBodyWraper from "./components/main_menu/WidgetBodyWraper.vue";
+import WidgetWindowForm from "./components/window/WidgetWindowForm.vue";
 
 import TempListCards from "./components/TempListCards.vue";
 </script>
 
 <template>
-  <WidgetMain>
+  <WidgetMainWraper>
     <WidgetBar title="TTS Deck Builder" showButtons="true"></WidgetBar>
-    <WidgetBody>
+    <WidgetBodyWraper>
       <TempListCards></TempListCards>
-    </WidgetBody>
-    <WidgetCreate></WidgetCreate>
-  </WidgetMain>
+    </WidgetBodyWraper>
+    <WidgetWindowForm></WidgetWindowForm>
+  </WidgetMainWraper>
 </template>
-
-<style scoped></style>
