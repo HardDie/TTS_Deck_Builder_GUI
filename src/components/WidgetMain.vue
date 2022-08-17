@@ -9,8 +9,8 @@
   display: flex;
   flex-direction: column;
 
-  width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
   background-color: #e3ded6;
   height: 100vh;
 }

@@ -100,9 +100,6 @@
 .icon {
   width: 24px;
   height: 24px;
-
-  /* Add space between buttons */
-  margin-left: 16px;
 }
 .path {
   font-family: "Roboto", sans-serif;
@@ -112,20 +109,12 @@
 }
 .buttons {
   display: flex;
-  margin: 0;
+  gap: 16px;
   padding: 0;
   align-items: center;
-
-  /* Buttons should be on the right side of the panel */
-  margin-left: auto;
-
   list-style: none;
 }
-li {
-  align-items: center;
-}
 .button {
-  /* Set the color for the buttons  */
   stroke: #e3ded6;
 }
 .button:hover {
@@ -134,13 +123,9 @@ li {
 .bar {
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
   background-color: #169747;
-  padding: 16px;
-
-  /* Задаем размеры для шапки */
-  width: 100%;
-  box-sizing: border-box;
+  padding: 0 15px;
   height: 56px;
 }
 </style>
