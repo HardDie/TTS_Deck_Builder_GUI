@@ -1,6 +1,6 @@
 <template>
   <div class="bar">
-    <span class="path"> Games </span>
+    <span class="path"> TTS Deck Builder </span>
     <ul class="buttons">
       <li>
         <a href="#" class="button">
@@ -137,5 +137,10 @@ li {
 
   background-color: #169747;
   padding: 16px;
+
+  /* Задаем размеры для шапки */
+  width: 100%;
+  box-sizing: border-box;
+  height: 56px;
 }
 </style>
