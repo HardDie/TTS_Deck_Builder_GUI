@@ -125,7 +125,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #169747;
-  padding: 0 15px;
+  padding: 0 16px;
   height: 56px;
 }
 </style>
