@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
-    <span class="path"> TTS Deck Builder </span>
-    <ul class="buttons">
+    <span class="path"> {{ title }} </span>
+    <ul class="buttons" v-if="showButtons">
       <li>
         <a href="#" class="button">
           <div class="icon">
@@ -129,3 +129,12 @@
   height: 56px;
 }
 </style>
+
+<script>
+export default {
+  props: ["title", "showButtons"],
+  data() {
+    return {};
+  },
+};
+</script>
