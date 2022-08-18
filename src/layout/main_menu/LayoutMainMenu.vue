@@ -8,7 +8,11 @@ import TempListCards from "@/components/TempListCards.vue";
 
 <template>
   <MainMenu>
-    <Bar title="TTS Deck Builder" showButtons="true"></Bar>
+    <Bar
+      title="TTS Deck Builder"
+      showButtons="true"
+      @addEvent="$emit('addEvent')"
+    ></Bar>
     <Body>
       <TempListCards></TempListCards>
     </Body>

@@ -8,21 +8,21 @@ import { Icon } from "@vicons/utils";
     <span class="path"> {{ title }} </span>
     <ul class="buttons-layout" v-if="showButtons">
       <li class="button-wraper">
-        <a href="#">
+        <a href="#" @click="addEvent">
           <Icon class="icon" size="24">
             <AddFilled />
           </Icon>
         </a>
       </li>
       <li class="button-wraper">
-        <a href="#">
+        <a href="#" @click="importEvent">
           <Icon class="icon" size="24">
             <NoteAddOutlined />
           </Icon>
         </a>
       </li>
       <li class="button-wraper">
-        <a href="#">
+        <a href="#" @click="searchEvent">
           <Icon class="icon" size="24">
             <SearchOutlined />
           </Icon>
@@ -71,6 +71,17 @@ export default {
   props: ["title", "showButtons"],
   data() {
     return {};
+  },
+  methods: {
+    addEvent: function () {
+      this.$emit("addEvent");
+    },
+    importEvent: function () {
+      this.$emit("importEvent");
+    },
+    searchEvent: function () {
+      this.$emit("searchEvent");
+    },
   },
 };
 </script>

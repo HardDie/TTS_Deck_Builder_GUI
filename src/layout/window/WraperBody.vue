@@ -10,5 +10,7 @@
 
   display: flex;
   flex-direction: column;
+
+  overflow: auto;
 }
 </style>

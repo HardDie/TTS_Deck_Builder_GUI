@@ -6,7 +6,28 @@ import LayoutWindow from "@/layout/window/LayoutWindow.vue";
 
 <template>
   <LayoutApp>
-    <LayoutMainMenu></LayoutMainMenu>
-    <LayoutWindow></LayoutWindow>
+    <LayoutMainMenu @addEvent="addEvent"></LayoutMainMenu>
+    <LayoutWindow
+      @cancelEvent="cancelEvent"
+      :isShow="showWindow"
+    ></LayoutWindow>
   </LayoutApp>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showWindow: false,
+    };
+  },
+  methods: {
+    addEvent: function () {
+      this.showWindow = true;
+    },
+    cancelEvent: function () {
+      this.showWindow = false;
+    },
+  },
+};
+</script>

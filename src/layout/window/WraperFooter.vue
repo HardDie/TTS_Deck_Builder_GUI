@@ -4,8 +4,8 @@ import { NButton } from "naive-ui";
 
 <template>
   <div class="footer-wraper">
-    <n-button type="primary">Add</n-button>
-    <n-button type="error">Cancel</n-button>
+    <n-button type="primary" @click="addEvent">Add</n-button>
+    <n-button type="error" @click="cancelEvent">Cancel</n-button>
   </div>
 </template>
 
@@ -21,3 +21,19 @@ import { NButton } from "naive-ui";
   padding-right: 16px;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    addEvent: function () {
+      this.$emit("addEvent");
+    },
+    cancelEvent: function () {
+      this.$emit("cancelEvent");
+    },
+  },
+};
+</script>

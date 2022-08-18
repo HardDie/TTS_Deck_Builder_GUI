@@ -8,13 +8,22 @@ import Footer from "./WraperFooter.vue";
 </script>
 
 <template>
-  <Hover>
+  <Hover v-show="isShow">
     <Window>
       <Bar title="Create game"></Bar>
       <Body>
         <InputImage></InputImage>
-        <Footer></Footer>
+        <Footer @cancelEvent="$emit('cancelEvent')"></Footer>
       </Body>
     </Window>
   </Hover>
 </template>
+
+<script>
+export default {
+  props: ["isShow"],
+  data() {
+    return {};
+  },
+};
+</script>
