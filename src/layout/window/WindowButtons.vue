@@ -1,5 +1,5 @@
 <script setup>
-import {NButton, NSpace} from 'naive-ui'
+import { NButton, NSpace } from "naive-ui";
 </script>
 
 <template>

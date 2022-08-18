@@ -1,6 +1,6 @@
 <script setup>
-import WidgetBar from "../common/WidgetBar.vue";
-import WidgetHover from "./WidgetHover.vue";
+import Bar from "@/containers/ContainerBar.vue";
+import Hover from "@/containers/ContainerHover.vue";
 import WidgetWindowWraper from "./WidgetWindowWraper.vue";
 import WidgetBodyWraper from "./WidgetBodyWraper.vue";
 import WindowMiddle from "./WindowMiddle.vue";
@@ -8,9 +8,9 @@ import WindowButtons from "./WindowButtons.vue";
 </script>
 
 <template>
-  <WidgetHover></WidgetHover>
+  <Hover></Hover>
   <WidgetWindowWraper>
-    <WidgetBar title="Create game"></WidgetBar>
+    <Bar title="Create game"></Bar>
     <WidgetBodyWraper>
       <WindowMiddle></WindowMiddle>
       <WindowButtons></WindowButtons>

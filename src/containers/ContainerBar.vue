@@ -1,6 +1,6 @@
 <script setup>
-import {AddFilled, NoteAddOutlined, SearchOutlined} from '@vicons/material'
-import {Icon} from '@vicons/utils'
+import { AddFilled, NoteAddOutlined, SearchOutlined } from "@vicons/material";
+import { Icon } from "@vicons/utils";
 </script>
 
 <template>
@@ -10,21 +10,21 @@ import {Icon} from '@vicons/utils'
       <li class="button-wraper">
         <a href="#">
           <Icon class="icon" size="24">
-            <AddFilled/>
+            <AddFilled />
           </Icon>
         </a>
       </li>
       <li class="button-wraper">
         <a href="#">
           <Icon class="icon" size="24">
-            <NoteAddOutlined/>
+            <NoteAddOutlined />
           </Icon>
         </a>
       </li>
       <li class="button-wraper">
         <a href="#">
           <Icon class="icon" size="24">
-            <SearchOutlined/>
+            <SearchOutlined />
           </Icon>
         </a>
       </li>
