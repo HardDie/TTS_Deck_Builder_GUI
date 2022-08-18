@@ -1,7 +1,13 @@
+<script setup>
+import {NButton, NSpace} from 'naive-ui'
+</script>
+
 <template>
   <div class="button-wraper">
-    <button>Add</button>
-    <button>Cancel</button>
+    <n-space>
+      <n-button type="primary">Add</n-button>
+      <n-button type="error">Cancel</n-button>
+    </n-space>
   </div>
 </template>
 

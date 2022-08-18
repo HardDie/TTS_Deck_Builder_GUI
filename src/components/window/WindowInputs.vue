@@ -1,13 +1,14 @@
+<script setup>
+import {NInput, NSpace} from 'naive-ui'
+</script>
+
 <template>
   <div class="inputs">
-    <label for="title">Title</label>
-    <input id="title" type="text" />
-
-    <label for="link">Image Link</label>
-    <input id="link" type="text" />
-
-    <label for="desc">Description</label>
-    <input id="desc" type="text" />
+    <n-space vertical>
+      <n-input type="text" placeholder="Title" />
+      <n-input type="text" placeholder="Image Link" />
+      <n-input type="textarea" placeholder="Description" />
+    </n-space>
   </div>
 </template>
 
