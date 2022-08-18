@@ -1,5 +1,5 @@
 <template>
-  <div class="window-image">
+  <div class="image-wraper">
     <img
       class="img"
       src="https://foursouls.com/wp-content/uploads/2022/01/r-the_capricious-308x420.png"
@@ -9,13 +9,12 @@
 </template>
 
 <style scoped>
-.window-image {
+.image-wraper {
   flex-grow: 1;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 100%;
 }
 .img {
   max-width: 369px;

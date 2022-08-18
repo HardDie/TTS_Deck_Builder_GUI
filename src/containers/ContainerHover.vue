@@ -1,5 +1,7 @@
 <template>
-  <div class="hover-wrapper"></div>
+  <div class="hover-wrapper">
+    <slot></slot>
+  </div>
 </template>
 
 <style scoped>
@@ -9,5 +11,9 @@
   background-color: #0d5f3070;
   width: 100%;
   height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

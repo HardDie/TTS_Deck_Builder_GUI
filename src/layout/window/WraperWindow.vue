@@ -1,15 +1,16 @@
 <template>
-  <div class="create-window-wraper">
+  <div class="window-wraper">
     <slot></slot>
   </div>
 </template>
 
 <style scoped>
-.create-window-wraper {
+.window-wraper {
+  background-color: #e3ded6;
+  width: 90%;
+  height: 80%;
+
   display: flex;
   flex-direction: column;
-
-  width: 100%;
-  height: 100%;
 }
 </style>
