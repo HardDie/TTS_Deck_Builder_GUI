@@ -1,15 +1,17 @@
 <template>
-  <div class="body-wraper">
+  <div class="vertical-wraper">
     <slot></slot>
   </div>
 </template>
 
 <style scoped>
-.body-wraper {
+.vertical-wraper {
   flex-grow: 1;
-
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  height: 100%;
 
   overflow: auto;
 }

@@ -1,5 +1,6 @@
 <script setup>
-import MainMenu from "./WraperMainMenu.vue";
+import Vertical from "@/layout/common/LayoutVertical.vue";
+
 import Bar from "@/containers/ContainerBar.vue";
 import Body from "./WraperBody.vue";
 
@@ -7,7 +8,7 @@ import TempListCards from "@/components/TempListCards.vue";
 </script>
 
 <template>
-  <MainMenu>
+  <Vertical>
     <Bar
       title="TTS Deck Builder"
       showButtons="true"
@@ -16,5 +17,5 @@ import TempListCards from "@/components/TempListCards.vue";
     <Body>
       <TempListCards></TempListCards>
     </Body>
-  </MainMenu>
+  </Vertical>
 </template>
