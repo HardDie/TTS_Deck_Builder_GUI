@@ -1,5 +1,5 @@
 <template>
-  <figure>
+  <figure @contextmenu="rclick">
     <img class="img" :src="img" :alt="title" />
     <figcaption class="label">{{ title }}</figcaption>
   </figure>
@@ -31,6 +31,11 @@ export default {
   props: ["title", "img"],
   data() {
     return {};
+  },
+  methods: {
+    rclick: function() {
+      console.log('right click event')
+    },
   },
 };
 </script>
