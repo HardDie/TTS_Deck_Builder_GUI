@@ -21,7 +21,6 @@ import Footer from "./WraperFooter.vue";
         </Horizontal>
         <Footer @cancelEvent="$emit('cancelEvent')"></Footer>
       </Vertical>
-      <Body> </Body>
     </Window>
   </Hover>
 </template>
