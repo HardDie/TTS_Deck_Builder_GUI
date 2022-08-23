@@ -14,7 +14,7 @@ import { NInput } from "naive-ui";
 .input-wraper {
   flex-grow: 1;
 
-  padding: 74px 160px;
+  padding: 74px 120px;
 
   display: flex;
   flex-direction: column;
