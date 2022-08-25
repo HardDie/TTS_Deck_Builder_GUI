@@ -25,8 +25,5 @@ export default {
   components: {
     NButton,
   },
-  setup() {
-    return {};
-  },
 };
 </script>

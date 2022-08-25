@@ -28,8 +28,5 @@ export default {
   components: {
     NInput,
   },
-  setup() {
-    return {};
-  },
 };
 </script>

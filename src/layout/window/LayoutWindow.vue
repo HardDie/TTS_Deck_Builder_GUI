@@ -38,8 +38,5 @@ export default {
   props: {
     isShow: Boolean,
   },
-  setup() {
-    return {};
-  },
 };
 </script>

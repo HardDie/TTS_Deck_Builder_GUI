@@ -32,8 +32,5 @@ export default {
     title: String,
     img: String,
   },
-  setup() {
-    return {};
-  },
 };
 </script>

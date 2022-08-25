@@ -26,8 +26,5 @@ export default {
     WraperBody,
     TempListCards,
   },
-  setup() {
-    return {};
-  },
 };
 </script>

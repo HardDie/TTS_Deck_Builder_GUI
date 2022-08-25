@@ -76,8 +76,5 @@ export default {
     title: String,
     showButtons: Boolean,
   },
-  setup() {
-    return {};
-  },
 };
 </script>

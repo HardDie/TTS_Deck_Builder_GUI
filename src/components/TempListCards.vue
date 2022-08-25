@@ -113,8 +113,5 @@ export default {
   components: {
     Card,
   },
-  setup() {
-    return {};
-  },
 };
 </script>
