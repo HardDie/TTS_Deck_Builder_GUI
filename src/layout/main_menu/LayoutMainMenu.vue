@@ -2,7 +2,7 @@
   <Vertical>
     <Bar
       title="TTS Deck Builder"
-      showButtons="true"
+      :showButtons="true"
       @addEvent="$emit('addEvent')"
     ></Bar>
     <WraperBody>
