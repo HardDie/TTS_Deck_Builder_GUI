@@ -1,7 +1,3 @@
-<script setup>
-import { NInput } from "naive-ui";
-</script>
-
 <template>
   <div class="input-wraper">
     <n-input type="text" placeholder="Title" />
@@ -24,3 +20,16 @@ import { NInput } from "naive-ui";
   flex-grow: 1;
 }
 </style>
+
+<script>
+import { NInput } from "naive-ui";
+
+export default {
+  components: {
+    NInput,
+  },
+  setup() {
+    return {};
+  },
+};
+</script>

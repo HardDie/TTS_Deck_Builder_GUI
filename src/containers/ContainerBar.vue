@@ -1,28 +1,23 @@
-<script setup>
-import { AddFilled, NoteAddOutlined, SearchOutlined } from "@vicons/material";
-import { Icon } from "@vicons/utils";
-</script>
-
 <template>
   <div class="bar">
     <span class="path"> {{ title }} </span>
     <ul class="buttons-layout" v-if="showButtons">
       <li class="button-wraper">
-        <a href="#" @click="addEvent">
+        <a href="#" @click="$emit('addEvent')">
           <Icon class="icon" size="24">
             <AddFilled />
           </Icon>
         </a>
       </li>
       <li class="button-wraper">
-        <a href="#" @click="importEvent">
+        <a href="#" @click="$emit('importEvent')">
           <Icon class="icon" size="24">
             <NoteAddOutlined />
           </Icon>
         </a>
       </li>
       <li class="button-wraper">
-        <a href="#" @click="searchEvent">
+        <a href="#" @click="$emit('searchEvent')">
           <Icon class="icon" size="24">
             <SearchOutlined />
           </Icon>
@@ -67,21 +62,22 @@ import { Icon } from "@vicons/utils";
 </style>
 
 <script>
+import { AddFilled, NoteAddOutlined, SearchOutlined } from "@vicons/material";
+import { Icon } from "@vicons/utils";
+
 export default {
-  props: ["title", "showButtons"],
-  data() {
-    return {};
+  components: {
+    AddFilled,
+    NoteAddOutlined,
+    SearchOutlined,
+    Icon,
   },
-  methods: {
-    addEvent: function () {
-      this.$emit("addEvent");
-    },
-    importEvent: function () {
-      this.$emit("importEvent");
-    },
-    searchEvent: function () {
-      this.$emit("searchEvent");
-    },
+  props: {
+    title: String,
+    showButtons: Boolean,
+  },
+  setup() {
+    return {};
   },
 };
 </script>

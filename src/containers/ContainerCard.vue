@@ -32,7 +32,7 @@ export default {
     title: String,
     img: String,
   },
-  data() {
+  setup() {
     return {};
   },
 };

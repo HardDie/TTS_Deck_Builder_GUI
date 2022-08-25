@@ -1,7 +1,3 @@
-<script setup>
-import Card from "@/containers/ContainerCard.vue";
-</script>
-
 <template>
   <Card
     title="Isaac"
@@ -109,3 +105,16 @@ import Card from "@/containers/ContainerCard.vue";
     img="https://foursouls.com/wp-content/uploads/2022/01/r-the_dauntless-308x420.png"
   ></Card>
 </template>
+
+<script>
+import Card from "@/containers/ContainerCard.vue";
+
+export default {
+  components: {
+    Card,
+  },
+  setup() {
+    return {};
+  },
+};
+</script>

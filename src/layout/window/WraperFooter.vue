@@ -1,11 +1,7 @@
-<script setup>
-import { NButton } from "naive-ui";
-</script>
-
 <template>
   <div class="footer-wraper">
-    <n-button type="primary" @click="addEvent">Add</n-button>
-    <n-button type="error" @click="cancelEvent">Cancel</n-button>
+    <n-button type="primary" @click="$emit('addEvent')">Add</n-button>
+    <n-button type="error" @click="$emit('cancelEvent')">Cancel</n-button>
   </div>
 </template>
 
@@ -23,17 +19,14 @@ import { NButton } from "naive-ui";
 </style>
 
 <script>
+import { NButton } from "naive-ui";
+
 export default {
-  data() {
-    return {};
+  components: {
+    NButton,
   },
-  methods: {
-    addEvent: function () {
-      this.$emit("addEvent");
-    },
-    cancelEvent: function () {
-      this.$emit("cancelEvent");
-    },
+  setup() {
+    return {};
   },
 };
 </script>

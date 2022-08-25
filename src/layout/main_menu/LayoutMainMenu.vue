@@ -1,12 +1,3 @@
-<script setup>
-import Vertical from "@/layout/common/LayoutVertical.vue";
-
-import Bar from "@/containers/ContainerBar.vue";
-import Body from "./WraperBody.vue";
-
-import TempListCards from "@/components/TempListCards.vue";
-</script>
-
 <template>
   <Vertical>
     <Bar
@@ -14,8 +5,29 @@ import TempListCards from "@/components/TempListCards.vue";
       showButtons="true"
       @addEvent="$emit('addEvent')"
     ></Bar>
-    <Body>
+    <WraperBody>
       <TempListCards></TempListCards>
-    </Body>
+    </WraperBody>
   </Vertical>
 </template>
+
+<script>
+import Vertical from "@/layout/common/LayoutVertical.vue";
+
+import Bar from "@/containers/ContainerBar.vue";
+import WraperBody from "./WraperBody.vue";
+
+import TempListCards from "@/components/TempListCards.vue";
+
+export default {
+  components: {
+    Vertical,
+    Bar,
+    WraperBody,
+    TempListCards,
+  },
+  setup() {
+    return {};
+  },
+};
+</script>

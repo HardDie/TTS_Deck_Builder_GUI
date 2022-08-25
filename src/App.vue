@@ -1,9 +1,3 @@
-<script setup>
-import LayoutApp from "@/layout/app/LayoutApp.vue";
-import LayoutMainMenu from "@/layout/main_menu/LayoutMainMenu.vue";
-import LayoutWindow from "@/layout/window/LayoutWindow.vue";
-</script>
-
 <template>
   <LayoutApp>
     <LayoutMainMenu @addEvent="addEvent"></LayoutMainMenu>
@@ -15,19 +9,29 @@ import LayoutWindow from "@/layout/window/LayoutWindow.vue";
 </template>
 
 <script>
+import LayoutApp from "@/layout/app/LayoutApp.vue";
+import LayoutMainMenu from "@/layout/main_menu/LayoutMainMenu.vue";
+import LayoutWindow from "@/layout/window/LayoutWindow.vue";
+
+import { ref } from "vue";
+
 export default {
-  data() {
-    return {
-      showWindow: false,
-    };
+  components: {
+    LayoutApp,
+    LayoutMainMenu,
+    LayoutWindow,
   },
-  methods: {
-    addEvent: function () {
-      this.showWindow = true;
-    },
-    cancelEvent: function () {
-      this.showWindow = false;
-    },
+  setup() {
+    const showWindowRef = ref(false);
+    return {
+      showWindow: showWindowRef,
+      addEvent() {
+        showWindowRef.value = true;
+      },
+      cancelEvent() {
+        showWindowRef.value = false;
+      },
+    };
   },
 };
 </script>
