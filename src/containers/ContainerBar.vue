@@ -41,6 +41,8 @@
   font-size: 20px;
   color: #e3ded6;
   font-weight: bold;
+
+  user-select: none;
 }
 .buttons-layout {
   display: flex;
